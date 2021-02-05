@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg" style="background-color: whitesmoke;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="margin-left: 5%; color:darkblue; font-size: 30px; ">I-Intern</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto nav-one" style="padding-left: 15%;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="font-size: 22px; color: darkblue;" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: 22px; color: darkblue;" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: 22px; color: darkblue;" href="#">gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: 22px; color: darkblue;" href="#">contact us</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+        </ul>
+
+        <ul class="navbar-nav mr-auto nav-two">
+          <li class="nav-item li-one">
+            <a class="nav-link active" style="font-size: 22px; color: darkblue;" href="#" [routerLink]="['/login']" >login</a>
+          </li> 
+          
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary mt-2" style="border-radius: 50px; color: white; background-color: darkblue" [routerLink]="['/register']">Get Started</button>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
