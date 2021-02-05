@@ -90,6 +90,8 @@ form {
         , rgb(16, 69, 173) 0%, rgb(29, 106, 224) 42%, rgb(27, 172, 239) 96%, rgb(28, 178, 241) 100%);
         height: 100%; */
         background-image: url(../../assets/images/signup-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
   }
   .buttons{
     display: flex;
