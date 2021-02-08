@@ -1,64 +1,73 @@
 <div class="container-fluid">
-    <div class="row " >
+    <div class="row ">
         <div class="col-md-12 mt-4 mb-4">
             <h4 style="margin-left: 44%; font-size: 50px; color: black;">I-intern</h4>
 
         </div>
 
     </div>
-        <div class="col-md-6 offset-md-3 mt-2 mb-3" >
-            <p class="content" style="color: black">I-Intern is an Indian Online Education platform that offers courses to upgrade your Skills.
-                I-Intern is an excellent platform for students who want to start their career in their chosen field. You can trust that we are safe and will show you the right path.
+    <div class="col-md-6 offset-md-3 mt-2 mb-3">
+        <p class="content" style="color: black">I-Intern is an Indian Online Education platform that offers courses to
+            upgrade your Skills.
+            I-Intern is an excellent platform for students who want to start their career in their chosen field. You can
+            trust that we are safe and will show you the right path.
 
-                
-                </p>
-            
+
+        </p>
+
+    </div>
+    <div class="col-md-6 offset-md-3 mt-5 p-5"
+        style="background-color: white; border-inline: inherit; border-radius: 5px;">
+
+        <div class="student_login1">
+            <h4 style="color:black;text-align: center;">Create your account</h4>
         </div>
-        <div class="col-md-6 offset-md-3 mt-5 p-5" style="background-color: white; border-inline: inherit; border-radius: 5px;">
-           
-                <div class="student_login1">
-                    <h4 style="color:black;text-align: center;">Create your account</h4>
+        <form class="form1" style="border-inline: inherit; border-inline-color: black; border-radius: 5px;">
+            <div class="container">
+                <label for="uname" style="color: black;"><b>First Name</b></label>
+                <input type="text" placeholder="Enter Username" name="FirstName" [(ngModel)]="FirstName" style="border-radius: 6px;" required>
+
+                <label for="uname" style="color: black;"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter full name" name="LastName" [(ngModel)]="LastName" style="border-radius: 6px;" required>
+
+                <label for="uname" style="color: black;"><b>Email address</b></label>
+                <input type="text" placeholder="Enter email address" name="Email" [(ngModel)]="Email" style="border-radius: 6px;" required>
+
+                <label for="uname" style="color: black;"><b>Create password</b></label>
+                <input type="password" placeholder="create password" name="Password" [(ngModel)]="Password"  style="border-radius: 6px;"
+                    required>
+
+                <label for="uname" style="color: black;"><b>Re enter your password</b></label>
+                <input type="password" placeholder="Re enter your password" name="ConfirmPassword" [(ngModel)]="ConfirmPassword" style="border-radius: 6px;"
+                    required>
+
+                <label for="uname" style="color: black;"><b>Phone number</b></label>
+                <input type="text" placeholder="Enter phone number" name="Phone" [(ngModel)]="Phone" style="border-radius: 6px;" required>
+
+
+
+
+
+
+                <label style="color: black;">
+                    By registering you agree to our <a href="https://www.wayup.com/terms/" style="color: blue;">Terms
+                        and Conditions</a> and <a href="https://www.wayup.com/terms/" style="color: blue">Privacy
+                        Policy.</a>
+                </label>
+                <div class="col-lg-12 mt-3">
+                    <button type="submit" (click)="Register()"
+                        style="background-image: linear-gradient(to left,#74ebd5,#9face6); font-size: 20px; color: black; border-radius: 6px;">Register</button>
                 </div>
-                <form class="form1" style="border-inline: inherit; border-inline-color: black; border-radius: 5px;">
-                    <div class="container">
-                        <label for="uname" style="color: black;"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" style="border-radius: 6px;" required>
+                <label style="color: black; margin-top: 2%;">Already have an account?</label> <a
+                    href="http://localhost:4200/login" style="margin-left: 2%; font-size: 17px;">Log In</a>
 
-                        <label for="uname" style="color: black;"><b>Full name</b></label>
-                        <input type="text" placeholder="Enter full name" name="uname" style="border-radius: 6px;" required>
-
-                        <label for="uname" style="color: black;"><b>Email address</b></label>
-                        <input type="text" placeholder="Enter email address" name="email" style="border-radius: 6px;" required>
-
-                        <label for="uname" style="color: black;"><b>Create password</b></label>
-                        <input type="password" placeholder="create password" name="password" style="border-radius: 6px;" required>
-                        
-                        <label for="uname" style="color: black;"><b>Re enter your password</b></label>
-                        <input type="password" placeholder="Re enter your password" name="password" style="border-radius: 6px;" required>
-
-                        <label for="uname" style="color: black;"><b>Phone number</b></label>
-                        <input type="text" placeholder="Enter phone number" name="number" style="border-radius: 6px;" required>
-
-                       
-
-                        
-                    
-                        <!-- x -->
-                        <label style="color: black;">
-                            By registering you agree to our <a href="https://www.wayup.com/terms/" style="color: blue;">Terms and Conditions</a> and <a href="https://www.wayup.com/terms/" style="color: blue">Privacy Policy.</a>
-                        </label>
-                    <div class="col-lg-12 mt-3">
-                        <button type="submit" style="background-image: linear-gradient(to left,#74ebd5,#9face6); font-size: 20px; color: black; border-radius: 6px;">Register</button>
-                    </div>
-                    <label style="color: black; margin-top: 2%;">Already have an account?</label> <a href="http://localhost:4200/login" style="margin-left: 2%; font-size: 17px;" >Log In</a>
-                        
-                      </div>
-<!--                     
+            </div>
+            <!--                     
                       <div class="container">
                         <button type="button" class="cancelbtn">Cancel</button>
                         <span class="psw" style="color: white;">Forgot <a href="#" style="color: white;">password?</a></span>
                       </div> -->
-                      <!-- <div class="buttons mt-5">
+            <!-- <div class="buttons mt-5">
                         <div class="col-6">  
                       <button type="button" class="btn btn-info" [routerLink]="['/user-signup']">SIGN UP</button>
                   </div>
@@ -66,9 +75,7 @@
                       <button type="button" class="btn btn-outline-info" [routerLink]="['/user-login']">LOG IN</button>
                   </div>
                   </div> -->
-                  
-                </form>
-        </div>
+
+        </form>
     </div>
-   
-   
+</div>
