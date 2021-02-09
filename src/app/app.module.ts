@@ -9,8 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { MiddleComponent } from './middle/middle.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './Index/footer/footer.component';
 import { RegisterComponent } from './register/register.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +19,14 @@ import { RegisterComponent } from './register/register.component';
     MiddleComponent,
     LoginComponent,
     HomeComponent,
-    FooterComponent,
-    RegisterComponent
+    RegisterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

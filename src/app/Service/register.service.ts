@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
+<<<<<<< HEAD
 import { HttpClient } from '@angular/common/http';
+=======
+>>>>>>> 57f5442cbceefc7236e3ed77a4e93706d5029b7f
 
 @Injectable({
   providedIn: 'root'
 })
 export class RegisterService {
+<<<<<<< HEAD
   url = "http://localhost:3000";
   userurl=`${this.url}`; //Check
 
@@ -73,4 +77,8 @@ export class RegisterService {
       }
     })
   }
+=======
+
+  constructor() { }
+>>>>>>> 57f5442cbceefc7236e3ed77a4e93706d5029b7f
 }
